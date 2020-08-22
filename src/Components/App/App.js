@@ -1,26 +1,24 @@
 import React from 'react';
 // import logo from './logo.svg';
 import './App.css';
+import SearchBar from '../SearchBar/SearchBar';
+import SearchResults from '../SearchResults/SearchResults';
+import Playlist from '../Playlist/Playlist';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>Ear<span className="highlight">bender</span></h1>
+        <div className="App">
+          <SearchBar />
+          <div className="App-playlist">
+            <SearchResults />
+            <Playlist />
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
-
 export default App;
