@@ -1,3 +1,6 @@
+Earbender is a React web application that utilizes Spotify API to allow users to search the Spotify
+library, create a custom playlist and then save it to their Spotify account.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
